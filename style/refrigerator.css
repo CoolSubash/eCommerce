@@ -1,0 +1,136 @@
+
+.refrigerator-page-heading{
+    text-align: center;
+    font-size: 2.7rem;
+    margin: 3rem 0rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.refrigerator-page-items{
+    width:80%;
+    margin:4rem auto;
+    display: flex;
+   
+}
+.refrigerator-page-items-list{
+    width:30%;
+    margin: 2rem;
+    
+}
+
+.refrigerator-overlay-image-recent{
+    position: relative;
+    background-color: #e2e2e2;
+   
+    height:340px;
+    border-radius: 10px;
+    opacity: 0.8;
+    
+
+
+}
+
+.refrigerator-recent-list{
+    margin-left:0.4rem;
+}
+
+.refrigerator-recent-image{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+   
+}
+.refrigerator-recent-image img{
+   
+    object-fit: cover;
+}
+.refrigerator-recent-search{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.refrigerator-recent-search-logo{
+    background-color: #c41239;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transform: scale(0);
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+.refrigerator-overlay-image-recent:hover{
+    opacity:1;
+    background-color: #a9a2a2;
+}
+.refrigerator-overlay-image-recent:hover .recent-search-logo{
+    opacity:1;
+    transform: scale(1);
+}
+
+
+.refrigerator-recent-price{
+    display: flex;
+    justify-content:space-between;
+   width:80%;
+   margin-right: auto;
+    align-items: center;
+   
+   
+}
+.refrigerator-recent-head{
+    margin-top:2rem;
+}
+
+.refrigerator-recent-head h1{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.refrigerator-recent-price{
+    margin-top:1rem;
+}
+
+.refrigerator-recent-price p{
+    color:rgb(192, 7, 69) ;
+}
+
+
+@media(max-width:720px){
+    
+    .refrigerator-page-heading{
+       
+        font-size: 2rem;
+        margin: 3rem 0rem;
+        
+    }
+    
+    .refrigerator-page-items{
+        width:80%;
+         margin: auto;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+       
+    }
+    .refrigerator-page-items-list{
+        width:100%;
+        margin-left: 0rem;
+        
+    }
+    
+    
+    
+    .refrigerator-recent-list{
+        margin-left:0rem;
+    }
+    
+    
+    
+    }
+    

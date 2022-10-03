@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&family=Roboto&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--pop);
+}
+
+:root{
+    --mon: 'Montserrat', sans-serif;
+    --pop: 'Poppins', sans-serif;
+    --rob:font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* -----------------------Header------------ */
+#main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+    margin:2rem auto;
+    
+    font-family: var(--pop);
+}
+.mobile-navbar-logo{
+    display: none;
+}
+
+.navbar-bar{
+    display: flex;
+    cursor: pointer;
+}
+.navbar-bar-text p{
+    margin-left:9px;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+.navbar-logo{
+    width:auto;
+    height:60px;
+    object-fit: cover;
+
+}
+
+.navbar-logo img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.navbar-sign,.sign,.cart{
+    display: flex;
+    cursor: pointer;
+}
+
+.fa-user-o,.fa-cart-arrow-down{
+    font-size:1.6rem;
+}
+
+.sign-text p{
+    margin-left:15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cart{
+    margin-left:30px;
+}
+.cart p{
+    margin-left:13px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+#form{
+    position: relative;
+}
+
+#sign-up-form{
+    width:600px;
+    height:90vh;
+    background-color: rgb(255, 255, 255);
+    font-family: var(--pop);
+    margin:auto;
+    padding: 30px;
+    border-radius: 20px;
+  border:2px solid grey;
+    position:fixed;
+    top:5%;
+     left:0;
+     right:0;
+  z-index:3;
+  display: none;
+  
+    
+   
+}
+.form-heading h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.row-form{
+    display: flex;
+    margin:2rem 0rem;
+    justify-content: space-between;
+   
+   
+}
+.form-design{
+    padding: 10px 16px;
+   
+    outline:none;
+    margin-top:7px;
+    width:90%;
+}
+#password{
+    width:100%;
+}
+.create-account{
+    text-align: center;
+    margin-top:2rem;
+}
+
+.create-account a{
+    font-family: var(--pop);
+    margin-top: 10px;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #c41239;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #c41239;
+    color: rgb(255, 255, 255);
+    -webkit-transition: color 500ms ease, background-color 500ms ease;
+    transition: color 500ms ease, background-color 500ms ease; 
+}
+.create-account a:hover{
+    background-color: transparent;
+    color: #000;
+}
+.already-account{
+  margin-top:15px;
+  text-align: center;
+}
+.cross-signform{
+    position: absolute;
+    top:10px;
+    right:30px;
+    font-size:2rem;
+    cursor: pointer;
+  
+}
+.cross-loginform{
+    position: absolute;
+    top:10px;
+    right:30px;
+    font-size:2rem;
+    cursor: pointer;
+  
+}
+.fa-times-rectangle{
+    color: rgb(163, 15, 15);
+}
+
+#login-form{
+    width:600px;
+    background-color: rgb(255, 255, 255);
+    height:80vh;
+    box-shadow: 1px 2px 2px 1px rgb(78, 75, 75);
+  
+    font-family: var(--pop);
+    margin:auto;
+    padding: 30px;
+    border-radius: 20px;
+   border:2px solid grey; 
+    position: fixed;
+   top:18%;
+    left:0;
+    right:0;
+    z-index:1;
+    display: none;
+   
+   
+}
+
+.login-form-heading h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.login-password{
+    margin:2rem 0rem;
+}
+.login-btn{
+    text-align: center;
+}
+#loginpage{
+   
+
+    font-family: var(--pop);
+    margin-top: 10px;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #c41239;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #c41239;
+    color: rgb(255, 255, 255);
+  
+    -webkit-transition: color 500ms ease, background-color 500ms ease;
+    transition: color 500ms ease, background-color 500ms ease; 
+}
+
+#loginpage:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+
+
+
+
+
+
+/* -----Second Navbar */
+
+
+#click-navbar{
+   /* position: absolute; */
+   width:100%;
+   z-index:1;
+    background-color: rgb(255, 255, 255);
+    /* height:80px; */
+     position: fixed;
+    /* overflow: hidden; */
+    display:none;
+    
+}
+.navbar-list-line{
+    border-top:1px solid #dcdcdc;
+}
+.navbar-list{
+    width:80%;
+    margin:auto;
+    
+}
+.navbar-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     height:80px; 
+    
+    
+}
+.navbar_items{
+    list-style: none;
+}
+.navbar_links{
+    text-decoration:none;
+    color:#000;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+}
+.navbar_links:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    transition: 0.1s linear;
+}
+
+/* ----------------fOOTER */
+
+
+#footer{
+  
+    width:80%;
+    margin:8rem auto 2rem;
+    padding-bottom: 20px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text{
+    width:25%;
+}
+.footer-logo img{
+    width:200px;
+   
+
+}
+.footer-logo h3{
+    color: gray;
+    margin-top:10px;
+}
+.footer-text {
+    margin-left:1rem;
+   
+    text-align: center;
+}
+.footer-text li{
+    list-style: none;
+}
+.footer-text li a:hover{
+    color: #c41239;
+}
+
+.company-list{
+    margin-top:2rem;
+}
+.company-list li{
+    margin: 8px 0px;
+}
+.company-list li a{
+    color: gray;
+    font-weight: 500;
+    text-align: center;
+}
+
+.social-media-icon{
+    display: flex;
+}
+
+.media-logo{
+    background-color: #c41239;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+    width:45px;
+    margin-left: 10px;
+    border-radius: 50%;
+
+}
+.media-logo a{
+    color: #fff;
+}
+.socialmedia-text {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* ------------------------------------------Responsive Making------------------- */
+
+
+
+
+
+@media(max-width:720px){
+    
+#click-navbar{
+    /* position: absolute; */
+    width:100%;
+    /* z-index:1; */
+     background-color: rgb(255, 255, 255);
+     height:80vh;
+     transition: height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+     overflow: hidden;
+ }
+ .navbar-list-line{
+     border-top:1px solid #dcdcdc;
+ }
+ .navbar-list{
+     width:80%;
+     margin:auto;
+     
+ }
+ .navbar-list ul{
+     display: flex;
+     justify-content:start;
+     align-items: flex-start;
+     flex-direction: column;
+     -ms-flex-direction: column;
+     height:80vh;
+     
+     
+ }
+ .navbar_items{
+     list-style: none;
+     margin-top: 2rem;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------Navbar------ */
+
+#main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    margin:0.6rem auto;
+    font-family: var(--pop);
+}
+.mobile-navbar-logo{
+    width:150px;
+    height: 58px;
+    margin:1rem auto 0rem ;
+    display: block;
+
+}
+.navbar-bar{
+    display: flex;
+    cursor: pointer;
+}
+.navbar-bar-text p{
+    margin-left:9px;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+.navbar-logo{
+    display: none;
+
+}
+
+.navbar-logo img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.navbar-sign,.sign,.cart{
+    display: flex;
+    cursor: pointer;
+}
+
+.fa-user-o,.fa-cart-arrow-down{
+    font-size:1rem;
+}
+
+.sign-text p{
+    margin-left:10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cart{
+    margin-left:30px;
+}
+.cart p{
+    margin-left:13px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* --form ----------*/
+#form{
+    position: relative;
+}
+
+#sign-up-form{
+    width:90%;
+}
+.form-heading h1{
+    text-align: center;
+    font-size:1.6rem;
+}
+.row-form{
+    display: flex;
+    flex-direction: column;
+    margin:0rem 0rem;
+    justify-content: space-between;
+}
+
+
+.create-account{
+    text-align: center;
+    margin-top:0.6rem;
+}
+
+.create-account a{
+    padding: 15px 20px;
+   }
+
+
+.cross-signform{
+    position: absolute;
+    top:10px;
+    right:30px;
+    font-size:2rem;
+    cursor: pointer;
+  }
+.cross-loginform{
+    position: absolute;
+    top:10px;
+    right:8px;
+    font-size:2rem;
+    cursor: pointer;
+  }
+.fa-times-rectangle{
+    color: rgb(163, 15, 15);
+}
+
+#login-form{
+    width:80%;
+     top:10%;
+   
+}
+
+.login-form-heading h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+/* Footer First */
+
+#footer{
+  
+    width:90%;
+    margin:3rem auto;
+    padding-bottom: 20px;
+}
+
+
+footer{
+  
+   flex-direction: column;
+}
+.footer-text{
+    width:100%;
+    margin-top:2rem;
+}
+.footer-logo img{
+    width:200px;
+   
+
+}
+
+
+.footer-text li a:hover{
+    color: #c41239;
+}
+
+.company-list{
+    margin-top:1rem;
+}
+.company-list li{
+    margin: 8px 0px;
+}
+
+.social-media-icon{
+   
+    justify-content: center;
+}
+
+}

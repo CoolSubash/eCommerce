@@ -1,0 +1,136 @@
+
+.smallapplicance-page-heading{
+    text-align: center;
+    font-size: 2.7rem;
+    margin: 3rem 0rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.smallapplicance-page-items{
+    width:80%;
+    margin:4rem auto;
+    display: flex;
+   
+}
+.smallapplicance-page-items-list{
+    width:30%;
+    margin:1rem;
+    
+}
+
+.smallapplicance-overlay-image-recent{
+    position: relative;
+    background-color: #e2e2e2;
+   
+    height:340px;
+    border-radius: 10px;
+    opacity: 0.8;
+    
+
+
+}
+
+.smallapplicance-recent-list{
+    margin-left:0.4rem;
+}
+
+.smallapplicance-recent-image{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+   
+}
+.smallapplicance-recent-image img{
+   
+    object-fit: cover;
+}
+.smallapplicance-recent-search{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.smallapplicance-recent-search-logo{
+    background-color: #c41239;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transform: scale(0);
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+.smallapplicance-overlay-image-recent:hover{
+    opacity:1;
+    background-color: #a9a2a2;
+}
+.smallapplicance-overlay-image-recent:hover .recent-search-logo{
+    opacity:1;
+    transform: scale(1);
+}
+
+
+.smallapplicance-recent-price{
+    display: flex;
+    justify-content:space-between;
+   width:80%;
+   margin-right: auto;
+    align-items: center;
+   
+   
+}
+.smallapplicance-recent-head{
+    margin-top:2rem;
+}
+
+.smallapplicance-recent-head h1{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.smallapplicance-recent-price{
+    margin-top:1rem;
+}
+
+.smallapplicance-recent-price p{
+    color:rgb(192, 7, 69) ;
+}
+
+
+@media(max-width:720px){
+    
+    .smallapplicance-page-heading{
+       
+        font-size: 2rem;
+        margin: 3rem 0rem;
+        
+    }
+    
+    .smallapplicance-page-items{
+        width:80%;
+         margin: auto;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+       
+    }
+    .smallapplicance-page-items-list{
+        width:100%;
+        margin-left: 0rem;
+        
+    }
+    
+    
+    
+    .smallapplicance-recent-list{
+        margin-left:0rem;
+    }
+    
+    
+    
+    }
+    
